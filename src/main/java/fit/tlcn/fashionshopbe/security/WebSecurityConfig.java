@@ -91,7 +91,7 @@ public class WebSecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         final CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("https://fashion-shop-fashion-shop.vercel.app"));
+        configuration.setAllowedOrigins(List.of("https://fashion-shop-fashion-shop.vercel.app", "https://fashion-shop-5k4smzzuy-fashion-shop.vercel.app", "https://fashion-shop-git-main-fashion-shop.vercel.app"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         configuration.setAllowCredentials(true); // Cho phép chia sẻ cookie và tiêu đề xác thực
         configuration.setExposedHeaders(List.of("Authorization", "Cache-Control", "Content-Type"));
